@@ -1,0 +1,22 @@
+server:
+  port: 8089
+spring:
+  thymeleaf:
+    cache: false
+  application:
+    name: rsapper
+  data:
+    jdbc:
+      repositories:
+        enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: cubetiq
+    password: Root$
+    url: jdbc:mysql://${MYSQL_HOST:192.168.0.150}:3306/db_rsapper
+  session:
+    timeout: 1m
