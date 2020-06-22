@@ -20,5 +20,4 @@ spring:
     url: jdbc:mysql://${MYSQL_HOST:192.168.0.150}:3306/db_rsapper
   session:
     timeout: 1m
-message: baby
-
+message: hey
